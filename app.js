@@ -14,8 +14,8 @@ const methodOverride = require('method-override');
 const Campground = require('./models/campground');
 const Review = require('./models/review');
 // mongodb://localhost:27017/yelp-camp
-//const dbUrl = mongodb+srv://harsh:<harsh#12>@cluster0.q45ku.mongodb.net/?retryWrites=true&w=majority ;
-mongoose.connect('mongodb+srv://harsh:harsh%2312@cluster0.q45ku.mongodb.net/?retryWrites=true&w=majority', {
+// mongodb+srv://harsh:harsh%2312@cluster0.q45ku.mongodb.net/?retryWrites=true&w=majority
+mongoose.connect('mongodb://localhost:27017/yelp-camp', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
